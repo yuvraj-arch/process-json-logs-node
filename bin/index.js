@@ -49,43 +49,22 @@ if(!rl.input._readableState.needReadable){
 
 
 
+// ============================[Read file using argumens]=======================
+// const readFile = require('fs').readFile;
+// const yargs = require("yargs");
 
 
+// const options = yargs
+//   .usage("Usage: -f <file_path>")
+//   .options("f", { alias: "file", describe: "give file", type: "string", demandOption: true })
+//  .argv;
 
+// const file = options.f;
 
-
-
-// --------------------------------------
-
-// process.stdin.setEncoding('utf8');
-
-// process.stdin.on('readable', function() {
-//   var chunk = process.stdin.read();
-//   if (chunk !== null) {
-//     process.stdout.write('data: ' + chunk);
-//   }
-// });
-
-// process.stdin.on('end', function() {
-//   process.stdout.write('end');
-// });
-
-
-// ------------------
-// var readline = require('readline');
-// var rl = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout,
-//   terminal: false
-// });
-
-
-// rl.on('line', function(line){
-//     console.log(line);
-// })
-// --------------
-//process.stdin.resume();
-//process.stdin.setEncoding('utf8');
-//process.stdin.on('data', function(data) {
-//  process.stdout.write(data);
-//});
+// readFile(file, (err, dataBuffer) => {
+//     if (err) {
+//       throw err;
+//     } else {
+//       console.log(dataBuffer.toString());
+//     }
+//   });
