@@ -1,0 +1,17 @@
+{
+  "name": "log-json",
+  "version": "1.0.0",
+  "description": "process log json",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yuvraj",
+  "license": "ISC",
+  "bin": {
+    "pjson": "./bin/index.js"
+  },
+  "dependencies": {
+    "yargs": "^17.0.1"
+  }
+}
